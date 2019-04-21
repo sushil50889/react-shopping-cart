@@ -35,12 +35,10 @@ export default class CartArea extends Component {
                                 </td>
                                 <td>
                                     <div className="product_count">
-                                        <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                        <input type="text" name="qty" id="sst" maxLength="12" defaultValue="1" title="Quantity:"
                                             className="input-text qty"/>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                            className="increase items-count" type="button"><i className="lnr lnr-chevron-up"></i></button>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                            className="reduced items-count" type="button"><i className="lnr lnr-chevron-down"></i></button>
+                                          <button className="increase items-count" type="button"><i className="lnr lnr-chevron-up"></i></button>
+                                        <button className="reduced items-count" type="button"><i className="lnr lnr-chevron-down"></i></button>
                                     </div>
                                 </td>
                                 <td>
@@ -63,12 +61,10 @@ export default class CartArea extends Component {
                                 </td>
                                 <td>
                                     <div className="product_count">
-                                        <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                        <input type="text" name="qty" id="sst" maxLength="12" defaultValue="1" title="Quantity:"
                                             className="input-text qty"/>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                            className="increase items-count" type="button"><i className="lnr lnr-chevron-up"></i></button>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                            className="reduced items-count" type="button"><i className="lnr lnr-chevron-down"></i></button>
+                                        <button className="increase items-count" type="button"><i className="lnr lnr-chevron-up"></i></button>
+                                        <button className="reduced items-count" type="button"><i className="lnr lnr-chevron-down"></i></button>
                                     </div>
                                 </td>
                                 <td>
@@ -91,12 +87,10 @@ export default class CartArea extends Component {
                                 </td>
                                 <td>
                                     <div className="product_count">
-                                        <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                        <input type="text" name="qty" id="sst" maxLength="12" defaultValue="1" title="Quantity:"
                                             className="input-text qty"/>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                            className="increase items-count" type="button"><i className="lnr lnr-chevron-up"></i></button>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                            className="reduced items-count" type="button"><i className="lnr lnr-chevron-down"></i></button>
+                                        <button className="increase items-count" type="button"><i className="lnr lnr-chevron-up"></i></button>
+                                        <button className="reduced items-count" type="button"><i className="lnr lnr-chevron-down"></i></button>
                                     </div>
                                 </td>
                                 <td>
@@ -155,14 +149,14 @@ export default class CartArea extends Component {
                                         </ul>
                                         <h6>Calculate Shipping <i className="fa fa-caret-down" aria-hidden="true"></i></h6>
                                         <select className="shipping_select">
-                                            <option value="1">Bangladesh</option>
-                                            <option value="2">India</option>
-                                            <option value="4">Pakistan</option>
+                                            <option defaultValue="1">Bangladesh</option>
+                                            <option defaultValue="2">India</option>
+                                            <option defaultValue="4">Pakistan</option>
                                         </select>
                                         <select className="shipping_select">
-                                            <option value="1">Select a State</option>
-                                            <option value="2">Select a State</option>
-                                            <option value="4">Select a State</option>
+                                            <option defaultValue="1">Select a State</option>
+                                            <option defaultValue="2">Select a State</option>
+                                            <option defaultValue="4">Select a State</option>
                                         </select>
                                         <input type="text" placeholder="Postcode/Zipcode"/>
                                         <a className="gray_btn" href="/">Update Details</a>

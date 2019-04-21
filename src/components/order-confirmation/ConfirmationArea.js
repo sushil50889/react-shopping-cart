@@ -91,7 +91,7 @@ class ConfirmationArea extends React.Component {
           									<h4>Subtotal</h4>
           								</td>
           								<td>
-          									<h5></h5>
+          									<h5>NA</h5>
           								</td>
           								<td>
           									<p>$2160.00</p>
@@ -102,7 +102,7 @@ class ConfirmationArea extends React.Component {
           									<h4>Shipping</h4>
           								</td>
           								<td>
-          									<h5></h5>
+          									<h5>NA</h5>
           								</td>
           								<td>
           									<p>Flat rate: $50.00</p>
@@ -113,7 +113,7 @@ class ConfirmationArea extends React.Component {
           									<h4>Total</h4>
           								</td>
           								<td>
-          									<h5></h5>
+          									<h5>NA</h5>
           								</td>
           								<td>
           									<p>$2210.00</p>

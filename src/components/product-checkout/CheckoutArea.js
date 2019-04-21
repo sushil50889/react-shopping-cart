@@ -13,7 +13,7 @@ export default class CheckoutArea extends Component {
                           </div>
                           <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new
                               customer, please proceed to the Billing & Shipping section.</p>
-                          <form className="row contact_form" action="#" method="post" novalidate="novalidate">
+                            <form className="row contact_form" action="#" method="post" noValidate="novalidate">
                               <div className="col-md-6 form-group p_star">
                                   <input type="text" className="form-control" id="name" name="name"/>
                                   <span className="placeholder" data-placeholder="Username or Email"></span>
@@ -26,7 +26,7 @@ export default class CheckoutArea extends Component {
                                   <button type="submit" value="submit" className="primary-btn">login</button>
                                   <div className="creat_account">
                                       <input type="checkbox" id="f-option" name="selector"/>
-                                      <label for="f-option">Remember me</label>
+                                      <label htmlFor="f-option">Remember me</label>
                                   </div>
                                   <a className="lost_pass" href="/">Lost your password?</a>
                               </div>
@@ -43,7 +43,7 @@ export default class CheckoutArea extends Component {
                           <div className="row">
                               <div className="col-lg-8">
                                   <h3>Billing Details</h3>
-                                  <form className="row contact_form" action="#" method="post" novalidate="novalidate">
+                                  <form className="row contact_form" action="#" method="post" noValidate="novalidate">
                                       <div className="col-md-6 form-group p_star">
                                           <input type="text" className="form-control" id="first" name="name"/>
                                           <span className="placeholder" data-placeholder="First name"></span>
@@ -95,14 +95,14 @@ export default class CheckoutArea extends Component {
                                       <div className="col-md-12 form-group">
                                           <div className="creat_account">
                                               <input type="checkbox" id="f-option2" name="selector"/>
-                                              <label for="f-option2">Create an account?</label>
+                                              <label htmlFor="f-option2">Create an account?</label>
                                           </div>
                                       </div>
                                       <div className="col-md-12 form-group">
                                           <div className="creat_account">
                                               <h3>Shipping Details</h3>
                                               <input type="checkbox" id="f-option3" name="selector"/>
-                                              <label for="f-option3">Ship to a different address?</label>
+                                              <label htmlFor="f-option3">Ship to a different address?</label>
                                           </div>
                                           <textarea className="form-control" name="message" id="message" rows="1" placeholder="Order Notes"></textarea>
                                       </div>
@@ -125,7 +125,7 @@ export default class CheckoutArea extends Component {
                                       <div className="payment_item">
                                           <div className="radion_btn">
                                               <input type="radio" id="f-option5" name="selector"/>
-                                              <label for="f-option5">Check payments</label>
+                                              <label htmlFor="f-option5">Check payments</label>
                                               <div className="check"></div>
                                           </div>
                                           <p>Please send a check to Store Name, Store Street, Store Town, Store State / County,
@@ -134,7 +134,7 @@ export default class CheckoutArea extends Component {
                                       <div className="payment_item active">
                                           <div className="radion_btn">
                                               <input type="radio" id="f-option6" name="selector"/>
-                                              <label for="f-option6">Paypal </label>
+                                              <label htmlFor="f-option6">Paypal </label>
                                               <img src={require("../../img/product/card.jpg")} alt=""/>
                                               <div className="check"></div>
                                           </div>
@@ -143,7 +143,7 @@ export default class CheckoutArea extends Component {
                                       </div>
                                       <div className="creat_account">
                                           <input type="checkbox" id="f-option4" name="selector"/>
-                                          <label for="f-option4">I’ve read and accept the </label>
+                                          <label htmlFor="f-option4">I’ve read and accept the </label>
                                           <a href="/">terms & conditions*</a>
                                       </div>
                                       <a className="primary-btn" href="/">Proceed to Paypal</a>

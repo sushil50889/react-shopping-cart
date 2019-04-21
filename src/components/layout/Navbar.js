@@ -2,7 +2,7 @@ import React, {
   Component
 } from "react";
 
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -34,9 +34,7 @@ class Navbar extends Component {
                 >
                   <ul className="nav navbar-nav menu_nav ml-auto">
                     <li className="nav-item active">
-                      <a className="nav-link" href="/">
-                        Home
-                      </a>
+                      <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li className="nav-item submenu dropdown">
                       <a
@@ -51,90 +49,21 @@ class Navbar extends Component {
                       </a>
                       <ul className="dropdown-menu">
                         <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Shop Category
-                          </a>
+                          <Link className="nav-link" to="/product-details">Product Details</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Product Details
-                          </a>
+                          <Link className="nav-link" to="/product-checkout">Product Checkout</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Product Checkout
-                          </a>
+                          <Link className="nav-link" to="/shopping-cart">Shopping Cart</Link>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Shopping Cart
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Confirmation
-                          </a>
+                          <Link className="nav-link" to="/order-confirmation">Confirmation</Link>
                         </li>
                       </ul>
                     </li>
-                    <li className="nav-item submenu dropdown">
-                      <a
-                        href="/"
-                        className="nav-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Blog
-                      </a>
-                      <ul className="dropdown-menu">
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Blog
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Blog Details
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="nav-item submenu dropdown">
-                      <a
-                        href="/"
-                        className="nav-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Pages
-                      </a>
-                      <ul className="dropdown-menu">
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Login
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Tracking
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="/">
-                            Elements
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="/">
-                        Contact
-                      </a>
-                    </li>
+
+                    
                   </ul>
                   <ul className="nav navbar-nav navbar-right">
                     <li className="nav-item">
