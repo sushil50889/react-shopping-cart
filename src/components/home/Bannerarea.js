@@ -1,14 +1,20 @@
 import React, { Component } from "react";
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 class Bannerarea extends Component {
+
   render() {
     return (
       <section className="banner-area">
   		<div className="container">
-  			<div className="row fullscreen align-items-center justify-content-start">
+  			<div className="row fullscreen align-items-center" style={{height: '937px'}}>
   				<div className="col-lg-12">
-  					<div className="active-banner-slider  owl-carousel">
-  						<div className="row single-slide align-items-center d-flex">
+
+
+            <OwlCarousel className="owl-theme" margin={10} items={1} nav={true} dots={true}>
+              <div className="row single-slide align-items-center d-flex">
   							<div className="col-lg-5 col-md-6">
   								<div className="banner-content">
   									<h1>Nike New <br/>Collection!</h1>
@@ -26,8 +32,7 @@ class Bannerarea extends Component {
   								</div>
   							</div>
   						</div>
-
-  						<div className="row single-slide">
+              <div className="row single-slide">
   							<div className="col-lg-5">
   								<div className="banner-content">
   									<h1>Nike New <br/>Collection!</h1>
@@ -45,7 +50,9 @@ class Bannerarea extends Component {
   								</div>
   							</div>
   						</div>
-  					</div>
+            </OwlCarousel>
+
+
   				</div>
   			</div>
   		</div>

@@ -8,22 +8,34 @@ import Products from './Products';
 import Brands from './Brands';
 import RelatedProducts from './RelatedProducts';
 // import Footer from './components/layout/Footer';
+import '../../App.css';
 
 
 
 class Home extends React.Component {
-  render () {
-    return(
-      <div>
-        <Bannerarea/>
-        <Featurearea/>
-        <Category/>
-        <Products/>
-        <Brands/>
-        <RelatedProducts/>
-      </div>
+
+
+  render() {
+    return ( <
+      div >
+      <
+      Bannerarea / >
+      <
+      Featurearea / >
+      <
+      Category / >
+      <
+      Products / >
+      <
+      Brands / >
+      <
+      RelatedProducts / >
+      <
+      /div>
     );
   }
+
+
 }
 
 export default Home;

@@ -6,7 +6,7 @@ import React from 'react';
 class Header extends React.Component {
   render () {
     return(
-      <section className="banner-area organic-breadcrumb">
+      <section className="banner-area organic-breadcrumb" style={{height: '400px'}}>
           <div className="container">
             <div className="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
               <div className="col-first">

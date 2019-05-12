@@ -1,4 +1,7 @@
 import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 class ProductArea extends React.Component {
   render () {
@@ -7,17 +10,17 @@ class ProductArea extends React.Component {
 		<div className="container">
 			<div className="row s_product_inner">
 				<div className="col-lg-6">
-					<div className="s_Product_carousel">
-						<div className="single-prd-item">
-							<img className="img-fluid" src={require("../../img/category/s-p1.jpg")} alt=""/>
-						</div>
-						<div className="single-prd-item">
-							<img className="img-fluid" src={require("../../img/category/s-p1.jpg")} alt=""/>
-						</div>
-						<div className="single-prd-item">
-							<img className="img-fluid" src={require("../../img/category/s-p1.jpg")} alt=""/>
-						</div>
-					</div>
+          <OwlCarousel className="owl-theme" margin={10} items={1} dots={true}>
+              <div className="single-prd-item">
+                <img className="img-fluid" src={require("../../img/category/s-p1.jpg")} alt=""/>
+              </div>
+              <div className="single-prd-item">
+                <img className="img-fluid" src={require("../../img/category/s-p1.jpg")} alt=""/>
+              </div>
+              <div className="single-prd-item">
+                <img className="img-fluid" src={require("../../img/category/s-p1.jpg")} alt=""/>
+              </div>
+          </OwlCarousel>
 				</div>
 				<div className="col-lg-5 offset-lg-1">
 					<div className="s_product_text">

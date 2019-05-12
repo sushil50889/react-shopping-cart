@@ -1,9 +1,13 @@
 import React, {Component} from "react";
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 class Products extends Component {
   render() {
     return(
-      	<section className="owl-carousel active-product-area section_gap">
+
+          <OwlCarousel className="owl-theme" margin={10} items={1} nav={true} dots={true}>
       		<div className="single-product-slider">
       			<div className="container">
       				<div className="row justify-content-center">
@@ -559,7 +563,7 @@ class Products extends Component {
       				</div>
       			</div>
       		</div>
-      	</section>
+          </OwlCarousel>
     );
   }
 }
