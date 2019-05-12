@@ -73,7 +73,7 @@ export function register(config) {
                   .then(cache => cache.put(event.request, cacheCopy))
                 return response;
               })
-              .catch(() => caches.match(offlinePage));
+              .catch(() => caches.match('/'));
             return cached || networked;
           })
         )
