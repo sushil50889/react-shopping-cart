@@ -6,7 +6,7 @@ In the project directory, you can run:
 
 ### `Live link`
 
-[https://react-shopping-cart-50889.herokuapp.com/](https://react-shopping-cart-50889.herokuapp.com/)
+[https://amazing-visvesvaraya-0118da.netlify.com/](https://amazing-visvesvaraya-0118da.netlify.com/)
 
 ### `npm start`
 
