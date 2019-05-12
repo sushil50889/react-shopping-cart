@@ -23,6 +23,7 @@ const isLocalhost = Boolean(
 export function register(config) {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
+    let CACHE_NAME = 'sw-v1';
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
     if (publicUrl.origin !== window.location.origin) {
       // Our service worker won't work if PUBLIC_URL is on a different origin
@@ -50,6 +51,34 @@ export function register(config) {
         // Is not localhost. Just register service worker
         registerValidSW(swUrl, config);
       }
+    });
+
+
+
+    window.addEventListener('install', (event) => {
+      event.waitUntil(
+        caches.open(CACHE_NAME)
+        .then(cache => cache.addAll('/'))
+      )
+    })
+    window.addEventListener('fetch', (event) => {
+      if (event.request.method === 'GET') {
+        event.respondWith(
+          caches.match(event.request)
+          .then((cached) => {
+            var networked = fetch(event.request)
+              .then((response) => {
+                let cacheCopy = response.clone()
+                caches.open(CACHE_NAME)
+                  .then(cache => cache.put(event.request, cacheCopy))
+                return response;
+              })
+              .catch(() => caches.match(offlinePage));
+            return cached || networked;
+          })
+        )
+      }
+      return;
     });
   }
 }
