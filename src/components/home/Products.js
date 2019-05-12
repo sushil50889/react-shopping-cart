@@ -7,7 +7,7 @@ class Products extends Component {
   render() {
     return(
 
-          <OwlCarousel className="owl-theme" margin={10} items={1} nav={true} dots={true}>
+          <OwlCarousel className="owl-theme" margin={10} items={1} dots={true}>
       		<div className="single-product-slider">
       			<div className="container">
       				<div className="row justify-content-center">

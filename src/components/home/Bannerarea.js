@@ -13,7 +13,7 @@ class Bannerarea extends Component {
   				<div className="col-lg-12">
 
 
-            <OwlCarousel className="owl-theme" margin={10} items={1} nav={true} dots={true}>
+            <OwlCarousel className="owl-theme" margin={10} items={1} dots={true}>
               <div className="row single-slide align-items-center d-flex">
   							<div className="col-lg-5 col-md-6">
   								<div className="banner-content">
