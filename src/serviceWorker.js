@@ -58,7 +58,9 @@ export function register(config) {
     window.addEventListener('install', (event) => {
       event.waitUntil(
         caches.open(CACHE_NAME)
-        .then(cache => cache.addAll('/'))
+        .then(cache => cache.addAll(
+          ['/', '/manifest.json', '/**']
+        ))
       )
     })
     window.addEventListener('fetch', (event) => {
