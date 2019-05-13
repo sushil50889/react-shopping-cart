@@ -75,7 +75,7 @@ export function register(config) {
                   .then(cache => cache.put(event.request, cacheCopy))
                 return response;
               })
-              .catch(() => caches.match('/'));
+              .catch(() => caches.match(event.request));
             return cached || networked;
           })
         )
